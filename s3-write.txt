@@ -1,0 +1,55 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "s3:CreateAccessPoint",
+                "s3:PutAccessPointConfigurationForObjectLambda",
+                "s3:DeleteObjectVersion",
+                "s3:RestoreObject",
+                "s3:DeleteAccessPoint",
+                "s3:PutObjectLegalHold",
+                "s3:InitiateReplication",
+                "s3:UpdateJobStatus",
+                "s3:DeleteAccessPointForObjectLambda",
+                "s3:ReplicateObject",
+                "s3:PutObject",
+                "s3:DeleteStorageLensConfiguration",
+                "s3:AbortMultipartUpload",
+                "s3:PutObjectRetention",
+                "s3:CreateAccessPointForObjectLambda",
+                "s3:UpdateJobPriority",
+                "s3:DeleteObject",
+                "s3:ReplicateDelete"
+            ],
+            "Resource": [
+                "arn:aws:s3:::*/*",
+                "arn:aws:s3:*:164246868491:accesspoint/*",
+                "arn:aws:s3-object-lambda:*:164246868491:accesspoint/*",
+                "arn:aws:s3:*:164246868491:storage-lens/*",
+                "arn:aws:s3:*:164246868491:job/*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "s3:SubmitMultiRegionAccessPointRoutes",
+                "s3:DeleteMultiRegionAccessPoint",
+                "s3:CreateMultiRegionAccessPoint"
+            ],
+            "Resource": "arn:aws:s3::164246868491:accesspoint/*"
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutStorageLensConfiguration",
+                "s3:CreateJob"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
