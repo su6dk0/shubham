@@ -1,0 +1,24 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "sns:ListSubscriptionsByTopic",
+            "Resource": "arn:aws:sns:*:164246868491:*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "sns:ListOriginationNumbers",
+                "sns:ListEndpointsByPlatformApplication",
+                "sns:ListSMSSandboxPhoneNumbers",
+                "sns:ListTopics",
+                "sns:ListSubscriptions",
+                "sns:ListPlatformApplications"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
