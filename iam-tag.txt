@@ -1,0 +1,34 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "iam:UntagSAMLProvider",
+                "iam:TagMFADevice",
+                "iam:TagSAMLProvider",
+                "iam:UntagServerCertificate",
+                "iam:TagPolicy",
+                "iam:TagUser",
+                "iam:UntagUser",
+                "iam:UntagMFADevice",
+                "iam:TagServerCertificate",
+                "iam:UntagPolicy",
+                "iam:UntagOpenIDConnectProvider",
+                "iam:UntagInstanceProfile",
+                "iam:TagOpenIDConnectProvider",
+                "iam:TagInstanceProfile"
+            ],
+            "Resource": [
+                "arn:aws:iam::164246868491:saml-provider/*",
+                "arn:aws:iam::164246868491:policy/*",
+                "arn:aws:iam::164246868491:user/*",
+                "arn:aws:iam::164246868491:server-certificate/*",
+                "arn:aws:iam::164246868491:mfa/*",
+                "arn:aws:iam::164246868491:instance-profile/*",
+                "arn:aws:iam::164246868491:oidc-provider/*"
+            ]
+        }
+    ]
+}
