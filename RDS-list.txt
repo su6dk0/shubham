@@ -1,0 +1,75 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "rds:DescribeDBProxyTargetGroups",
+                "rds:DescribeDBInstanceAutomatedBackups",
+                "rds:DescribeDBSubnetGroups",
+                "rds:DescribeGlobalClusters",
+                "rds:DescribePendingMaintenanceActions",
+                "rds:DescribeDBParameterGroups",
+                "rds:DescribeDBClusterBacktracks",
+                "rds:DescribeDBProxyTargets",
+                "rds:DescribeDBInstances",
+                "rds:DescribeDBProxies",
+                "rds:DescribeDBParameters",
+                "rds:DescribeDBProxyEndpoints",
+                "rds:DescribeDBClusterSnapshotAttributes",
+                "rds:DescribeDBClusterParameters",
+                "rds:DescribeEventSubscriptions",
+                "rds:DescribeDBSnapshots",
+                "rds:DescribeDBLogFiles",
+                "rds:DescribeDBSecurityGroups",
+                "rds:DescribeDBSnapshotAttributes",
+                "rds:DescribeReservedDBInstances",
+                "rds:DescribeBlueGreenDeployments",
+                "rds:DescribeValidDBInstanceModifications",
+                "rds:DescribeDBClusterSnapshots",
+                "rds:DescribeOptionGroupOptions",
+                "rds:DescribeDBClusterEndpoints",
+                "rds:DescribeDBClusters",
+                "rds:DescribeOptionGroups",
+                "rds:DescribeDBClusterParameterGroups"
+            ],
+            "Resource": [
+                "arn:aws:rds:*:164246868491:pg:*",
+                "arn:aws:rds:*:164246868491:ri:*",
+                "arn:aws:rds:*:164246868491:cluster-snapshot:*",
+                "arn:aws:rds:*:164246868491:og:*",
+                "arn:aws:rds:*:164246868491:snapshot:*",
+                "arn:aws:rds:*:164246868491:cluster-pg:*",
+                "arn:aws:rds:*:164246868491:db-proxy-endpoint:*",
+                "arn:aws:rds:*:164246868491:subgrp:*",
+                "arn:aws:rds::164246868491:global-cluster:*",
+                "arn:aws:rds:*:164246868491:secgrp:*",
+                "arn:aws:rds:*:164246868491:deployment:*",
+                "arn:aws:rds:*:164246868491:db-proxy:*",
+                "arn:aws:rds:*:164246868491:es:*",
+                "arn:aws:rds:*:164246868491:db:*",
+                "arn:aws:rds:*:164246868491:target-group:*",
+                "arn:aws:rds:*:164246868491:cluster-endpoint:*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "rds:DescribeDBEngineVersions",
+                "rds:DescribeExportTasks",
+                "rds:DescribeEngineDefaultClusterParameters",
+                "rds:DescribeOrderableDBInstanceOptions",
+                "rds:DescribeSourceRegions",
+                "rds:DescribeEngineDefaultParameters",
+                "rds:DescribeCertificates",
+                "rds:DescribeEventCategories",
+                "rds:DescribeAccountAttributes",
+                "rds:DescribeEvents",
+                "rds:DescribeReservedDBInstancesOfferings"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
