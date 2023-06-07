@@ -1,0 +1,21 @@
+following are steps to recover EC2 server key:-
+
+1. firstly create a two new instance,key-inst-1 and key-inst-2
+2. Del the .pem key of inst-2 and stop the key-inst-2
+3. Go to volume and select the key-inst-2 volume and  click on Action - detach volume 
+4. select the key-inst-2 volume and click on action -attach volume
+5. Copy public ip of key-inst-1  and paste in moba-terminal
+6. Open moba-terminal -ssh-paste public ip in remote host,specify user 
+   click-advance ssh setting add instance-1 .pem key -ok 
+7. type lsblk ,hvdf partition is show theire .
+8. make directory name /var/shubham
+9. mount that directory in  xvdf1 by using cmd ( mount -o /dev/xvdf1 /var/shubham)
+10. Check the partation by using lsblk cmd and type ( cat /home/ec2-user/.ssh/authorized_keys >> /var/shubham/home/ec2-u      ser/.ssh/authorized_key
+11. Umount that mount directory ( umount /var/shubham/ ) and check by using lsblk cmd 
+12. Umount the mount directory ( umount /var/shubham/ ) and check by using lsblk cmd 
+13. Now go to instance-2 volume -action and detach volume again go in - action - attach volume 
+    and select the key-inst-2 -device -/dev/xvda  
+14. Goto instance start the instance - copy public ip - start  mobaxterm -start session -paste    public ip
+15.specify user name ( ec2-user )- Advance ssh - copy instance-1 .pem file - ok
+16.Now login if u lost .pem file 
+17.successfully logged in without .pem key.
